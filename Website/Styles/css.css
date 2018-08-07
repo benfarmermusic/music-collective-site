@@ -1,0 +1,500 @@
+body{
+    background: #111;
+    background-image: url('../Images/minneapolis.jpg');
+    font-family: "Courier New", Courier, monospace;
+}
+
+button { 
+    cursor: pointer; 
+}
+
+.responsive-width{
+    font-size: 3vw;
+}
+
+.responsive-width-small{
+    font-size: 2vw;
+}
+
+.navbutton{
+    background-color: teal;
+    color: white;
+}
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* AUDIO PLAYER */
+/*////////////////////////////////////*/
+
+.audioCenter{
+  display: block;
+  margin-left:70%;
+  margin-right: 0px;
+}
+
+#player{
+    padding-left: 0; 
+    padding-right: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    color:teal;
+}
+
+.songinfo{
+    
+    background-color: teal;
+    color: white;
+    display: none;
+    border: solid 1px white;
+    
+}
+
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* SIDE NAV */
+/*////////////////////////////////////*/
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: teal;
+    display: block;
+    transition: 0.3s;
+    border: solid white;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: lightcoral;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 29px;
+    margin-left: 50px;
+    background-color: black;
+    border: none;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* TRACKS NAV */
+/*////////////////////////////////////*/
+
+/* The tracks sidebar */
+.tracks {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* The tracks menu links */
+.tracks a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the track links, change their color */
+.tracks a:hover {
+    color: lightcoral;
+}
+
+/* Position and style the close button (top right corner) */
+.tracks .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.tracktitle{
+    margin: auto;
+    text-align: center;
+    border: solid white;
+    color: teal;
+    width: 50%;
+    background-color: teal;
+    
+}
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* SONGS TABLE */
+/*////////////////////////////////////*/
+.tablewrapper{
+    overflow:hidden;
+    overflow-y: scroll;
+    height: 300px;
+    border: 10px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.songstable{
+    margin:auto;
+    border: 10px solid black;
+    font-family: "Nunito", sans-serif;
+    background-color:white;
+}
+
+.headcell{
+    text-align: center;
+    color: white;   
+    background-color: teal;
+}
+
+.songnamecell{
+    text-align: center;
+    padding: 10px;
+}
+
+.songartistcell{
+    text-align: center;
+    padding: 10px;
+}
+
+.producercell{
+    text-align: center;
+    padding: 10px;
+}
+
+.clickablerow:hover{
+  cursor: pointer;
+  background-color: #a5c7ff;
+}
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* SKETCHES NAV */
+/*////////////////////////////////////*/
+
+.sketches {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* The sketches menu links */
+.sketches a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+/* When you mouse over the track links, change their color */
+.sketches a:hover {
+    color: lightcoral;
+    
+}
+
+/* Position and style the close button (top right corner) */
+.sketches .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sketchimages{
+    cursor:pointer;
+    height:100px;
+    width:100px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.sketchtitles{
+    
+    color:white;
+    font-size:14px;
+    font-family: "Courier New", Courier, monospace;
+}
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* SOUND DESIGN */
+/*////////////////////////////////////*/
+
+.soundDesignBlock{
+    
+    width: 50%;
+    height: 300px;
+    background-color: white;
+}
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* SETTINGS */
+/*////////////////////////////////////*/
+
+.settingswrapper{
+    height: 300px;
+    width: 70%;
+    border: 10px solid black;
+    background-color: white;
+    display:none;
+}
+
+.settingsbutton{
+    background-color: teal;
+    color: white;
+}
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* SLIDER */
+/*////////////////////////////////////*/
+
+.slidecontainer {
+
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%; /* Full-width */
+    height: 25px;/* Specified height */
+    border-radius: 15px;
+    background: black; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: .9; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 20px;
+    background: teal; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: teal; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* CHARACTER SELECT */
+/*////////////////////////////////////*/
+
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+#myCharacters{
+  font-family: 'VT323';
+  background:#111 url(https://subtlepatterns.com/patterns/dirty_old_shirt.png)
+}
+.characterh1{
+  color:#fff;
+  font-size:46px;
+  text-shadow:2px 2px 0 #08c;
+  font-weight:normal;
+  text-align: center;
+}
+.turtlesul{
+  max-width:800px;
+  margin:0 auto;
+  padding:0;
+  list-style:none;
+}
+.turtlesul li{
+  display:block;
+  width:200px;
+  height:340px;
+  padding:0;
+  cursor:pointer;
+  float:left;
+  position:relative;
+  color:white;
+}
+.turtlesul li::before{
+ 
+  content:" ";
+  display:block;
+  width:92px;
+  height:92px;
+  position:absolute;
+  left:80px;
+  top:-50px
+}
+.t1{
+    background-image:url(http://i60.tinypic.com/2h34h7l.jpg)
+}
+
+.t2{
+  background-image:url(http://i59.tinypic.com/4ifmlu.jpg)
+}
+.t3{
+  background-image:url(http://i58.tinypic.com/20h62k5.jpg)
+}
+.t4{
+  background-image:url(http://i59.tinypic.com/24dpxjr.jpg)
+}
+
+.t1:hover, .t1.active{
+  background-image:url(http://i58.tinypic.com/9kt27q.jpg)
+}
+.t1:hover::before, .t1.active::before{
+   background: url(http://i62.tinypic.com/mmbh1x.jpg) 0 0 no-repeat;
+}
+.t2:hover, .t2.active{
+  background-image:url(http://i61.tinypic.com/i3rn2g.jpg)
+}
+.t2:hover::before, .t2.active::before{
+   background: url(http://i62.tinypic.com/mmbh1x.jpg) -100px 0px no-repeat;
+}
+.t3:hover, .t3.active{
+  background-image:url(http://i60.tinypic.com/jjy15x.jpg)
+}
+.t3:hover::before, .t3.active::before{
+   background: url(http://i62.tinypic.com/mmbh1x.jpg) -200px 0px no-repeat;
+}
+.t4:hover, .t4.active{
+  background-image:url(http://i59.tinypic.com/29dweah.jpg)
+}
+.t4:hover::before, .t4.active::before{
+   background: url(http://i62.tinypic.com/mmbh1x.jpg) -300px 0px no-repeat;
+}
+.blink{ opacity:0.1 }
+
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/*////////////////////////////////////*/
+/* BIO */
+/*////////////////////////////////////*/
+
+
+#block_container
+{
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    background: #002B5C;
+}
+#bloc1, #bloc2
+{
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
